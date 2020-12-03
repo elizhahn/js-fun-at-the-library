@@ -14,8 +14,7 @@
 
 var title = "The Alchemist";
 var pages = 456;
-console.log(pages);
-console.log(title);
+
 
 
 
@@ -24,7 +23,6 @@ console.log(title);
 // of what it currently is
 
 pages = 456 / 4;
-console.log(pages);
 
 // Initialize a new variable "movie", but leave it undefined
 
@@ -34,13 +32,12 @@ var movie;
 // book (made up or not!). Your sequel must make use of your "title" variable from above
 
 var sequel = title + " Must Mistify";
-console.log(sequel);
+
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the book you chose is your favorite book or not
 
 var isFavorite = false;
-console.log(isFavorite);
 
 
 // Create a new variable named "isShortStory", and use a comparison operator to
@@ -56,7 +53,6 @@ if (pages <= 25) {
  isShortStory = false;
 }
 
-console.log(isShortStory);
 
 //------------------------- Conditionals -------------------------//
 
@@ -93,7 +89,7 @@ var books = ["Harry Potter", "Ella Enchanted", "OtherWorld", "The Lord of the Ri
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
 
-console.log(books[2]);
+books[2];
 
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
@@ -104,7 +100,7 @@ var belowTwoHundred = [100, 15, 56, 199, 168, 1, 43, 23, 78, 101, 97, 87];
 
 // Write the code to access the 5th element of the array, using bracket notation.
 
-console.log(belowTwoHundred[4]);
+belowTwoHundred[4];
 
 
 //------------------------- Objects -------------------------//
@@ -123,5 +119,3 @@ var dictionary = {
 // notation to do this. DO NOT modify your code from above.
 
 dictionary.pageCount = 720;
-
-console.log(dictionary);
