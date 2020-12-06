@@ -1,6 +1,8 @@
 function createTitle(title) {
-  var newTitle = `The ${title}`;
-  return newTitle;
+  //refactor
+  return `The ${title}`;
+  // var newTitle = `The ${title}`;
+  // return newTitle;
 }
 
 function buildMainCharacter(name, age, pronouns){
@@ -10,7 +12,7 @@ function buildMainCharacter(name, age, pronouns){
     pronouns: pronouns
   }
 }
-var reviews = [];
+
 function saveReview(review, reviewsList){
   //Refactor
   var matchesExist = false;
@@ -20,7 +22,6 @@ function saveReview(review, reviewsList){
    if (matchesExist === false) {
      reviewsList.push(review);
    }
-
   // for (var i = 0; i < array.length; i++) {
   //   if(review === array[i]) {
   //     matchesExist = true;
