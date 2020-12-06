@@ -1,5 +1,4 @@
 
-var shelf = []
 function shelfBook(book, shelf) {
   if (shelf.length < 3) {
     return shelf.unshift(book);
@@ -22,6 +21,7 @@ function listTitles(shelf) {
    return titles.join(', ');
 }
 
+
 function searchShelf(shelf, title) {
   var onShelf = false;
   for(i = 0; i < shelf.length; i++) {
@@ -37,7 +37,6 @@ function searchShelf(shelf, title) {
       return false;
     }
   }
-
 
 
 module.exports = {
