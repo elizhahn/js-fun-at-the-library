@@ -12,13 +12,19 @@ function createLibrary(name) {
 
 function addBook(library, book) {
   if (book.genre === "fantasy") {
-  return library.shelves.fantasy[0] = book;
+    //refactor
+    return library.shelves.fantasy.push(book);
+  //return library.shelves.fantasy[0] = book;
 } else if (book.genre === "fiction") {
-  return library.shelves.fiction[0] = book;
+  //refactor
+    return library.shelves.fiction.push(book);
+  //return library.shelves.fiction[0] = book;
 } else {
-  return library.shelves.nonFiction[0] = book;
+  //refactor
+    return library.shelves.nonFiction.push(book);
+  //return library.shelves.nonFiction[0] = book;
 }
- }
+}
 
  function checkoutBook(library, title, genre) {
    var bookShelf = library.shelves[genre];
@@ -30,6 +36,9 @@ function addBook(library, book) {
     }
     return `Sorry, there are currently no copies of ${title} available at the ${library.name}`
   }
+
+
+
 
 
 module.exports = {
